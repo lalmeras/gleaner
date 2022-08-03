@@ -17,7 +17,7 @@ pass_output = make_pass_decorator(Output)
 @click.pass_context
 def main(ctx):
     ctx.ensure_object(dict)
-    ctx.obj[Config] = Config()
+    ctx.obj[Config] = Config(["git/*"])
     ctx.obj[Output] = Output()
 
 
