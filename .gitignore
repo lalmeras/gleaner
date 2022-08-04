@@ -1,2 +1,5 @@
 __pycache__/
 /dist/
+/build/
+/coverage.xml
+/.coverage
