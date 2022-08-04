@@ -39,4 +39,4 @@ def repo_list(ctx, repo_command, output):
     
 
 if __name__ == "__main__":
-    main()
+    main() # pragma: no cover
