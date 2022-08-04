@@ -1,4 +1,5 @@
 import pathlib
+from typing import List
 
 import git
 
@@ -11,8 +12,8 @@ class RepoCommand(object):
         self.config = config
 
 
-    def scan(self) -> list[Repo]:
-        repos: list[Repo] = []
+    def scan(self) -> List[Repo]:
+        repos: List[Repo] = []
         for pattern in self.config.includes:
             git_pattern = pattern + "/.git"
             candidates = self.config.root.glob(git_pattern)
